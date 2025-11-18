@@ -1,0 +1,82 @@
+ <div id="pag6-main-Artwork" class="h-[100vh] w-full bg-cyan-90 px-20 relative bg-black">
+
+                <h1 class="text-[7vw] font-extrabold text-center">watch more artwork.</h1>
+
+                <div id="Artworks" class="h-[50%] w-full  px-20 py-10 overflow-y-auto mt-20">
+
+                    <div id="Artwork-elems" class="h-fit w-full flex flex-col gap-7">
+
+                        <a href="#" id="Artworks-1" class="w-fit flex items-start justify-start gap-10 relative">
+                            <h2 class="text-base font- tracking-wide pt-1">2024</h2>
+                            <h3
+                                class="w-fit text-lg font-light tracking-wide relative pb-3 border-b-[.5px] border-[#bdbdbd94]">
+                                project name</h3>
+                        </a>
+
+                        <a href="#" id="Artworks-2" class="w-fit flex items-start justify-start gap-10 relative">
+                            <h2 class="text-base font- tracking-wide pt-1">2024</h2>
+                            <h3
+                                class="w-fit text-lg font-light tracking-wide relative pb-3 border-b-[.5px] border-[#bdbdbd94]">
+                                project name</h3>
+                        </a>
+
+                        <a href="#" id="Artworks-3" class="w-fit flex items-start justify-start gap-10 relative">
+                            <h2 class="text-base font- tracking-wide pt-1">2024</h2>
+                            <h3
+                                class="w-fit text-lg font-light tracking-wide relative pb-3 border-b-[.5px] border-[#bdbdbd94]">
+                                project name</h3>
+                        </a>
+
+                        <a href="#" id="Artworks-4" class="w-fit flex items-start justify-start gap-10 relative">
+                            <h2 class="text-base font- tracking-wide pt-1">2024</h2>
+                            <h3
+                                class="w-fit text-lg font-light tracking-wide relative pb-3 border-b-[.5px] border-[#bdbdbd94]">
+                                project name</h3>
+                        </a>
+
+                        <a href="#" id="Artworks-5" class="w-fit flex items-start justify-start gap-10 relative">
+                            <h2 class="text-base font- tracking-wide pt-1">2024</h2>
+                            <h3
+                                class="w-fit text-lg font-light tracking-wide relative pb-3 border-b-[.5px] border-[#bdbdbd94]">
+                                project name</h3>
+                        </a>
+
+                        <a href="#" id="Artworks-6" class="w-fit flex items-start justify-start gap-10 relative">
+                            <h2 class="text-base font- tracking-wide pt-1">2024</h2>
+                            <h3
+                                class="w-fit text-lg font-light tracking-wide relative pb-3 border-b-[.5px] border-[#bdbdbd94]">
+                                project name</h3>
+                        </a>
+
+                        <a href="#" id="Artworks-7" class="w-fit flex items-start justify-start gap-10 relative">
+                            <h2 class="text-base font- tracking-wide pt-1">2024</h2>
+                            <h3
+                                class="w-fit text-lg font-light tracking-wide relative pb-3 border-b-[.5px] border-[#bdbdbd94]">
+                                project name</h3>
+                        </a>
+
+                        <a href="#" id="Artworks-8" class="w-fit flex items-start justify-start gap-10 relative">
+                            <h2 class="text-base font- tracking-wide pt-1">2024</h2>
+                            <h3
+                                class="w-fit text-lg font-light tracking-wide relative pb-3 border-b-[.5px] border-[#bdbdbd94]">
+                                project name</h3>
+                        </a>
+
+                        <a href="#" id="Artworks-9" class="w-fit flex items-start justify-start gap-10 relative">
+                            <h2 class="text-base font- tracking-wide pt-1">2024</h2>
+                            <h3
+                                class="w-fit text-lg font-light tracking-wide relative pb-3 border-b-[.5px] border-[#bdbdbd94]">
+                                project name</h3>
+                        </a>
+
+                        <a href="#" id="Artworks-10" class="w-fit flex items-start justify-start gap-10 relative">
+                            <h2 class="text-base font- tracking-wide pt-1">2024</h2>
+                            <h3
+                                class="w-fit text-lg font-light tracking-wide relative pb-3 border-b-[.5px] border-[#bdbdbd94]">
+                                project name</h3>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>

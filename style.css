@@ -1,0 +1,724 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: gilroy; */
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    cursor: none;
+}
+
+
+/*......................................................................... lenis CSS code ........................................................................ */
+
+html.lenis,
+html.lenis body {
+    height: auto;
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
+
+
+/*......................................................................... fonts ........................................................................ */
+
+@font-face {
+    font-family: Slussen;
+    src: url(./fonts/Slussen-Compressed-Black.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 900;
+    font-stretch: compressed;
+}
+
+@font-face {
+    font-family: Slussen;
+    src: url(./fonts/Slussen-Expanded-Black.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 900;
+    font-stretch: expanded;
+}
+
+@font-face {
+    font-family: Slussen;
+    src: url(./fonts/Slussen-Regular.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 400;
+    /* font-stretch: compressed; */
+}
+
+@font-face {
+    font-family: Slussen;
+    src: url(./fonts/Slussen-Bold.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 700;
+    /* font-stretch: compressed; */
+}
+
+/* @font-face {
+    font-family: Akkordeon-DEMO;
+    src: url(./fonts/Akkordeon-DEMO.otf);
+} */
+
+@font-face {
+    font-family: Consolas;
+    src: url(./fonts/Consolas.ttf);
+}
+
+
+
+/*.........................................................................fixe-div........................................................................ */
+
+/*.............................fixed crcl .......................... */
+
+
+#crcl #text {
+    animation: TextRotateAnima 10s linear infinite;
+}
+
+@keyframes TextRotateAnima {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#crcl #text span {
+    position: absolute;
+    left: 50%;
+    top: -5%;
+    transform-origin: 0 44px;
+}
+
+
+/*.........................................................................main........................................................................ */
+
+
+main {
+    position: relative;
+}
+
+main #bg-black-div::-webkit-scrollbar {
+    display: none;
+}
+
+#Artworks::-webkit-scrollbar {
+    display: none;
+}
+
+
+/*.........................................................................bg-black-div........................................................................ */
+
+
+/*..............................page background imege.......................... */
+
+.page-bg-imege {
+    background-image: url(./imgs/noise.png);
+    background-size: 10%;
+    width: calc(100% + 45vw);
+    height: calc(100% + 55vw);
+    position: absolute;
+    opacity: .5;
+    top: -15vw;
+    left: -15vw;
+    animation: background .2s steps(4) 0s infinite normal none running;
+    /* z-index: 9 !important; */
+}
+
+@keyframes background {
+
+    0%,
+    100% {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+
+    10% {
+        -webkit-transform: translate(-5rem, -5rem);
+        transform: translate(-5rem, -5rem);
+    }
+
+    50% {
+        -webkit-transform: translate(10rem, 10rem);
+        transform: translate(10rem, 10rem);
+    }
+
+    70% {
+        -webkit-transform: translate(5rem, 3rem);
+        transform: translate(9rem, 3rem);
+    }
+
+    90% {
+        -webkit-transform: translate(-1rem, 3rem);
+        transform: translate(1rem, 3rem);
+    }
+}
+
+
+#line-Circle-img-page1 #Circle-img-frist{
+    animation: lineCircleImg 30s linear infinite;
+}
+
+@keyframes lineCircleImg {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#line-Circle-img-page1 #Circle-img-second{
+    animation: lineCircleImg2 30s linear infinite;
+}
+
+@keyframes lineCircleImg2 {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/*.........................................................................page 1........................................................................ */
+
+/*.................page1 moving arrow icon............... */
+
+#page1 a i {
+    position: absolute;
+    left: -50%;
+    animation: downArrow 1s 3s infinite;
+}
+
+@keyframes downArrow {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(300%);
+    }
+}
+
+
+
+#Circle-img-frist,#Circle-img-second>img{
+    filter: contrast(1%);
+    /* transition: filter 300ms; */
+}
+#Circle-img-second>img{
+    filter: contrast(50%);
+    /* transition: filter 300ms; */
+}
+
+
+/*.........................................................................page 2 page2-content........................................................................ */
+
+
+
+.my-img{
+    filter: drop-shadow(0px 0px 30px #dd6000);
+}
+
+/*.........................................................................page 5 mini project........................................................................ */
+
+
+/*.................page 5 vertical Move-text................... */
+#projects-menu{
+    box-shadow: 0 0 50px rgba(163, 163, 163, 0.964);
+
+}
+
+#project-text-move {
+    transform: translate(-47.5%, -0%) rotate(-90deg);
+}
+
+#project-text-move h3 {
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: .5px white;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 1px));
+    }
+}
+
+
+/*.................page 5 Move-text background....................*/
+
+
+#project-text-move #text-bg-img {
+    background-image: url(./imgs/noise.png);
+    background-size: 10%;
+    width: calc(100% + 25vw);
+    height: calc(100% + 25vw);
+    position: absolute;
+    opacity: .5;
+    top: -15vw;
+    left: -15vw;
+    animation: background .2s steps(4) 0s infinite normal none running;
+}
+
+@keyframes background {
+
+    0%,
+    100% {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+    }
+
+    10% {
+        -webkit-transform: translate(-5rem, -5rem);
+        transform: translate(-5rem, -5rem);
+    }
+
+    50% {
+        -webkit-transform: translate(10rem, 10rem);
+        transform: translate(10rem, 10rem);
+    }
+
+    70% {
+        -webkit-transform: translate(5rem, 3rem);
+        transform: translate(9rem, 3rem);
+    }
+
+    90% {
+        -webkit-transform: translate(-1rem, 3rem);
+        transform: translate(1rem, 3rem);
+    }
+}
+
+
+/*.................page 5 mini projects ke project photos....................*/
+
+
+
+#page5-section .projects-wraper::-webkit-scrollbar{
+   display: none;
+}
+
+
+.projects .project-photo{
+    box-shadow: 0 0 10px rgba(163, 163, 163, 0.867);
+}
+
+.projects .project-photo:hover{
+    box-shadow: 0 0 20px rgba(163, 163, 163, 0.867);
+}
+
+
+#projects-page .bottom-projects-p-line #p-line-star img{
+    animation: bottom-projects-p-lineStar 30s linear infinite;
+}
+
+@keyframes bottom-projects-p-lineStar {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+#projects-page .bottom-projects-p-line .p-line::before{
+    content: "";
+    height: .5px;
+    width: 0%;
+    /* background-color: red; */
+    position: absolute;
+    left:0;
+    /* display: inline-block; */
+    top: 0;
+    transition: all ease 1s;
+}
+
+#projects-page .bottom-projects-p-line .p-line:hover::before{
+    width: 100%;
+}
+
+
+
+
+
+/*......................................................................... page 6 Artwork........................................................................ */
+
+
+/* #pag6-main-Artwork{
+    z-index: 99!important;
+} */
+/* #pag6-main-Artwork{
+    z-index: 110 !important;
+} */
+
+#Artwork-elems-pages{
+    transition: all ease 1s;
+}
+#Artwork-elems::-webkit-scrollbar{
+    display: none   ;
+}
+
+#Artwork-elems-pages .Artwork-elems{
+    backdrop-filter: blur(10px);
+}
+
+#Artworks #Artworks-left-line .l-line::before{
+    content: "";
+    height: 0%;
+    width: .5px;
+    /* background-color: red; */
+    position: absolute;
+    left:0;
+    top: 0;
+    transition: all ease 1s;
+}
+
+#Artworks #Artworks-left-line .l-line:hover::before{
+    height: 100%;
+}
+
+#Artworks #Artworks-left-line #left-line-star img{
+    animation: left-line-star-Anim 30s linear infinite;
+}
+
+@keyframes left-line-star-Anim {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+#Artwork-elems-pages .pages-overly{
+    animation: iconRotate 10s linear infinite;
+}
+
+@keyframes iconRotate {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#pag6-main-Artwork #Artworks a h3:before{
+    content: "";
+    height: .5px;
+    width: 0%;
+    background: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all ease .5s;
+}
+
+
+#pag6-main-Artwork #Artworks a:hover h3:before{
+    /* content: ""; */
+    /* height: 5px; */
+    width: 100%;
+    background: #ffffff;
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left: 0; */
+}
+
+
+/* Initial styles for sections */
+section {
+    /* opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;j
+    left: 100%; Start off-screen to the right */
+    transition: all 0.5s ease-in-out;
+}
+
+/* When a section is active, it slides in from the right */
+section.active {
+    opacity: 1;
+    left: 0; /* Slide to its final position */
+}
+
+
+
+.Artworks-img:hover .img{
+    scale: 2;
+}
+
+
+
+
+.Artworks-deteils .project-live-link a h5:before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    background: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all ease .5s;
+}
+
+
+.Artworks-deteils .project-live-link a:hover h5:before{
+    /* content: ""; */
+    /* height: 5px; */
+    width: 100%;
+    background: #ebebeb;
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left: 0; */
+}
+
+
+.live-link-arrow i{
+    animation: liveLinkArrow 1s linear infinite;
+}
+
+@keyframes liveLinkArrow {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+#pag6-main-Artwork #Artwork-page-bottom-blur{
+    background: linear-gradient(to top, #000, #000000cf, #00000069, transparent);
+}
+
+.Artworks-deteils .star-img{
+    animation: starRotate 30s linear infinite;
+}
+
+@keyframes starRotate {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+/*......................................................................... page 7 ........................................................................ */
+
+/*............................. page 7 move div .......................... */
+
+
+#page7-move-div #move .marque {
+    transform: translateX(-100%);
+    /* transition: all ease .5s; */
+}
+
+
+
+
+
+/*......................................................................... page 8 ........................................................................ */
+
+/*............................. page 8 feedback section .......................... */
+
+
+/*............... feedback form section................... */
+
+#feedback-form form {
+    backdrop-filter: blur(10px);
+}
+
+
+#feedback-form form #name-row input:focus~label,
+#feedback-form form #name-row input:valid~label {
+    transform: translateY(-20px);
+    font-size: 1vw;
+    left: 1vw;
+    background: transparent;
+}
+
+#feedback-form form #name-row label {
+    transition: all ease .3s;
+    background: transparent;
+
+}
+
+#feedback-form form #email-row input:focus~label,
+#feedback-form form #email-row input:valid~label {
+    transform: translateY(-20px);
+    font-size: 1vw;
+    left: 1vw;
+}
+
+#feedback-form form #email-row label {
+    transition: all ease .3s;
+}
+
+
+#feedback-form form #message-box textarea:focus~label,
+#feedback-form form #message-box textarea:valid~label {
+    transform: translateY(-25px);
+    font-size: 1vw;
+    left: 1vw;
+}
+
+#feedback-form form #message-box label {
+    transition: all ease .3s;
+}
+
+
+/*............... feedback get-in-tuch crcl................... */
+
+#page8-feedback #get-in-tuch {
+    box-shadow: 0px 1px 10px #fff;
+}
+
+#page8-feedback #get-in-tuch h1 {
+    text-shadow: 1px 0px 12px #fff;
+}
+
+
+
+
+
+
+
+/*......................................................................... footer ........................................................................ */
+
+/*............................. footer section .......................... */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    /* z-index: 90; */
+}
+
+
+/*.................social part....................*/
+
+footer #social .social .icons {
+    animation: iconsrotatereverse .3s linear;
+    /* z-index: 999; */
+}
+
+footer #social .social:hover .icons {
+    animation: iconsrotet .3s linear;
+}
+
+footer #social a .social {
+    width: 50%;
+    transition: all ease .4s;
+}
+
+footer #social a .social:hover {
+    width: 60%;
+    transition: all ease .4s;
+    border-bottom: .5px solid #fff;
+}
+
+footer #social a .social:hover h4 {
+    transition: all ease 1s;
+    color: white;
+}
+
+
+/*.................contact part....................*/
+
+footer #contact .contact .icons {
+    animation: iconsrotatereverse .3s linear;
+}
+
+footer #contact .contact:hover .icons {
+    animation: iconsrotet .3s linear;
+}
+
+footer #contact a .contact {
+    width: 50%;
+    transition: all ease .4s;
+}
+
+footer #contact a .contact:hover {
+    width: 60%;
+    transition: all ease .4s;
+    border-bottom: .5px solid #fff;
+}
+
+footer #contact a .contact:hover h4 {
+    /* width:60%; */
+    transition: all ease 1s;
+    color: white;
+}
+
+
+/*.................icons rotet animation....................*/
+
+@keyframes iconsrotet {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes iconsrotatereverse {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.moving-star{
+    z-index: 99999999999999999999 !important;
+}
